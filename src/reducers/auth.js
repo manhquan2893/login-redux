@@ -15,6 +15,12 @@
                     success:isValid,
                     error:!isValid
                 }
+        case 'logined':
+            return {
+                ...state,
+                logined:true,
+                mes:action.mes
+            }
         default:
           return state;
       }
